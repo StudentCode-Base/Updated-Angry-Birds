@@ -5,7 +5,6 @@ const Bodies = Matter.Bodies;
 var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
-
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
 }
@@ -39,6 +38,7 @@ function setup(){
 }
 
 function draw(){
+    text ("Updated Version",200,200)
     background(backgroundImg);
     Engine.update(engine);
     console.log(box2.body.position.x);
